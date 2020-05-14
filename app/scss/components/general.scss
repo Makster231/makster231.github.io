@@ -1,0 +1,31 @@
+﻿body {
+  font-family: "Sarabun", sans-serif !important;
+  color: $white;
+  overflow-x: hidden;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+
+  @media (min-width: $md) {
+    line-height: 1.3;
+    overflow: hidden;
+    font-size: 16px;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+b {
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  &[data-object-fit="cover"] {
+    object-fit: cover;
+  }
+}

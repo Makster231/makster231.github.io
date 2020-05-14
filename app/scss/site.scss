@@ -1,0 +1,29 @@
+﻿//variables:
+@import "settings/reset";
+@import "settings/brand-color";
+@import "settings/grid-variable";
+@import "settings/grid";
+
+/* purgecss start ignore */
+//Components:
+@import "components/general";
+@import "components/wrapper-page";
+
+@import "components/header-page";
+@import "components/main-cube";
+@import "components/footer-page";
+
+@import "components/about-page";
+@import "components/works-page";
+@import "components/costs-page";
+@import "components/contacts-page";
+//UI:
+@import "UI/keyframes";
+@import "UI/fontello";
+@import "UI/fontello-codes";
+@import "UI/form-validation";
+@import "UI/slick";
+@import "UI/mobile-orientation";
+@import "UI/is_IE";
+
+/* purgecss end ignore */

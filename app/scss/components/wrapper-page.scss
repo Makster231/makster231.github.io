@@ -1,0 +1,18 @@
+﻿.wrapper-page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: $blue;
+
+  .cube-perspective {
+    perspective: 1200px;
+  }
+
+  > * {
+    width: 100%;
+  }
+
+  .main-page {
+    flex: 1 0 auto;
+  }
+}
