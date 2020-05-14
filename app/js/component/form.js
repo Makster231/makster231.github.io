@@ -73,7 +73,7 @@
 
       $.ajax({
         type: "POST",
-        url: "https://github.com/Makster231/Makster231.github.io/blob/master/mail.php",
+        url: "../../mail.php",
         data: data,
         success: function (msg) {
           if (msg == "OK") {
