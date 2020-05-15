@@ -21,6 +21,15 @@
     },
   });
 
+  function inputFocus() {
+    $(".js_form-control").on("focus", function () {
+      $("#js_body").addClass("js_overflow-stop");
+    });
+    $(".js_form-control").on("blur", function () {
+      $("#js_body").removeClass("js_overflow-stop");
+    });
+  }
+
   function formValidate(form) {
     form.validate({
       rules: {
@@ -73,7 +82,7 @@
 
       $.ajax({
         type: "POST",
-        url: "./blob/master/mail.php",
+        url: "http://k92582vf.beget.tech/mail_send.php",
         data: data,
         success: function (msg) {
           if (msg == "OK") {
@@ -90,5 +99,6 @@
 
   $(() => {
     formSubmit();
+    inputFocus();
   });
 })(window.jQuery, window, document);
