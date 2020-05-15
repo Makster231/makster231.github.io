@@ -73,7 +73,7 @@
 
       $.ajax({
         type: "POST",
-        url: "../../mail.php",
+        url: "./blob/master/mail.php",
         data: data,
         success: function (msg) {
           if (msg == "OK") {
