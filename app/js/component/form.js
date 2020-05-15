@@ -21,12 +21,28 @@
     },
   });
 
+  function preventDefault(e) {
+    e.preventDefault();
+  }
+
+  function disableScroll() {
+    document.body.addEventListener("touchmove", preventDefault, {
+      passive: false,
+    });
+  }
+
+  function enableScroll() {
+    document.body.removeEventListener("touchmove", preventDefault, {
+      passive: false,
+    });
+  }
+
   function inputFocus() {
     $(".js_form-control").on("focus", function () {
-      $("#js_body").addClass("js_overflow-stop");
+      disableScroll();
     });
     $(".js_form-control").on("blur", function () {
-      $("#js_body").removeClass("js_overflow-stop");
+      enableScroll();
     });
   }
 
