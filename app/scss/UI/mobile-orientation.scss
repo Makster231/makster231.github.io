@@ -1,7 +1,7 @@
 @media screen and (max-width: $lg) and (orientation: landscape) {
   footer,
   header,
-  section {
+  .main-page--section {
     display: none !important;
   }
   main {
