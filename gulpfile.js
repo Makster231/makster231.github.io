@@ -53,8 +53,6 @@ const js_plugins = [
 	path.app.jsComponents + 'page_swipe.js',
 	path.app.jsComponents + 'page_rotate.js',
 
-	path.app.jsComponents + 'form.js',
-
 	path.app.jsComponents + 'after-load.js',
 	path.app.jsComponents + 'custom.js',
 ];

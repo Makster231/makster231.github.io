@@ -122,24 +122,6 @@
     border-color: transparent $blue transparent transparent;
   }
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: $blue;
-  }
-}
 /*  Анимации для секции "Обо Мне"*/
 .js_animation-about {
   .about-page--media {
@@ -188,8 +170,8 @@
     opacity: 0;
     animation: fade-in 0.3s linear 0.8s forwards;
     + .slick-slide {
-    opacity: 0;
-    animation: fade-in 0.3s linear 0.4s forwards;
+      opacity: 0;
+      animation: fade-in 0.3s linear 0.4s forwards;
     }
   }
 
@@ -255,27 +237,16 @@
 
 /*  Анимации для секции "Контакты"*/
 .js_animation-contacts {
-  form {
+  .js_animation-1 {
     opacity: 0;
-    animation: scale 0.7s linear 0.2s forwards;
+    animation: slide-down 0.3s linear 0.3s forwards;
   }
-
-  ul {
+  .js_animation-2 {
     opacity: 0;
-    animation: fade-in 0.2s linear 0.4s forwards;
-    a {
-      opacity: 0;
-      animation: fade-in 0.3s linear 0.6s forwards,
-        color 4s linear 0.3s infinite;
-    }
-    li {
-      @for $i from 1 through 7 {
-        &:nth-child(#{$i}) {
-          a {
-            animation-delay: $i * (4s / 14);
-          }
-        }
-      }
-    }
+    animation: slide-down 0.3s linear 0.6s forwards;
+  }
+  .js_animation-3 {
+    opacity: 0;
+    animation: slide-down 0.3s linear 0.9s forwards;
   }
 }
