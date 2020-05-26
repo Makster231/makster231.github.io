@@ -87,12 +87,28 @@
         1px 0 1px $blue, -1px -1px 1px $blue, 1px -1px 1px $blue,
         -1px 1px 1px $blue, 1px 1px 1px $blue, -1px -1px 1px $blue,
         1px -1px 1px $blue, -1px 1px 1px $blue, 1px 1px 1px $blue;
+      display: flex;
+      flex-direction: column;
+      padding-left: 8px;
+      padding-right: 8px;
+      box-sizing: border-box;
+
       &:last-of-type {
         margin-bottom: 0;
       }
 
+      span {
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: center;
+      }
       @media (min-width: $md) {
         font-size: 24px;
+        padding-left: 10px;
+        padding-right: 10px;
+        span {
+          font-size: 16px;
+        }
       }
     }
 

@@ -43,6 +43,11 @@
     }
 
     @media (min-width: $md) {
+      width: 175px;
+      height: 175px; 
+    }
+
+    @media (min-width: $xl) {
       width: 225px;
       height: 225px;
     }
