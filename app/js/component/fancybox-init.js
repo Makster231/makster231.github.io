@@ -160,17 +160,36 @@
       }
     );
   });
-  $(".js_fancybox-bitbunch").click(function () {
+  $(".js_fancybox-bitbunch--home").click(function () {
     $.fancybox.open(
       [
         {
-          src: "../../images/works/bitbunch/full.jpg",
+          src: "../../images/works/bitbunch/home-d.jpg",
         },
         {
-          src: "../../images/works/bitbunch/full_tablet.jpg",
+          src: "../../images/works/bitbunch/home-t.jpg",
         },
         {
-          src: "../../images/works/bitbunch/full_mob.jpg",
+          src: "../../images/works/bitbunch/home-m.jpg",
+        },
+      ],
+      {
+        loop: true,
+        touch: false,
+      }
+    );
+  });
+  $(".js_fancybox-bitbunch--team").click(function () {
+    $.fancybox.open(
+      [
+        {
+          src: "../../images/works/bitbunch/team-d.jpg",
+        },
+        {
+          src: "../../images/works/bitbunch/team-t.jpg",
+        },
+        {
+          src: "../../images/works/bitbunch/team-m.jpg",
         },
       ],
       {
